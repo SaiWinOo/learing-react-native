@@ -5,6 +5,7 @@ import { TouchableOpacity, Text, Image } from 'react-native';
 const Stack = createStackNavigator();
 
 import { Ionicons } from '@expo/vector-icons';
+import Color from "./screens/Color";
 
 export default function App() {
   return (
@@ -32,6 +33,7 @@ export default function App() {
           ),
 
         }} />
+          <Stack.Screen name='Color' component={Color} />
       </Stack.Navigator>
     </NavigationContainer>
   );
